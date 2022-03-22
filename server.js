@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 
-//import routes
+//import routes  
 const postRouts = require('./routes/posts');
 
 //app middleware
@@ -30,5 +30,5 @@ mongoose.connect(DB_URL,{
 })
 
 app.listen(port, () => {
-    console.log('App is running on ${port}');
+    console.log(`Server Is Running on Port: ${port}`);
 });
